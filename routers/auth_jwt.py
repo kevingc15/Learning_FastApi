@@ -17,7 +17,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 1
 
 
 async def hash_password(password: str):
-    return password_hasher.hash(password)
+    return password_hasher.hash(password) 
 
 async def verify_password(plain_password: str, hashed_password: str):
     return password_hasher.verify(plain_password, hashed_password)
